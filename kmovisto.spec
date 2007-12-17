@@ -13,7 +13,6 @@ Source0:	%{name}-%{version}.tar.bz2
 Patch:		kmovisto-0.7.0-cpp.patch.bz2
 BuildRequires:	qt3-devel
 BuildRequires:  MesaGLU-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 KMovisto is a free molecule viewer. This program imports GAUSSIAN or XYZ files
