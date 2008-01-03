@@ -34,14 +34,15 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
 # menu
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="kmovisto"\
-needs="x11"\
-section="More Applications/Sciences/Chemistry"\
-title="KMovisto"\
-icon="chemistry_section.png"\
-longtitle="QT Molecule Viewer"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=kmovisto
+Categories=Science;Chemistry;
+Name=KMovisto
+Icon=chemistry_section
+Comment=QT Molecule Viewer
 EOF
 
 %post
@@ -57,5 +58,5 @@ rm -fr %buildroot
 %defattr (-,root,root,0755)
 %doc %{_docdir}/%{name}-%{version}
 %{_bindir}/%{name}
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 
