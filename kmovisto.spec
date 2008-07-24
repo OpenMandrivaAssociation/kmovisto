@@ -1,6 +1,6 @@
 %define	name	kmovisto
 %define	version	0.7.0
-%define	release	%mkrel 6
+%define	release	%mkrel 8
 
 Summary:	Molecule viewer and 3-D exporter
 Name:		%{name}
