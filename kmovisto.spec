@@ -7,7 +7,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 License:	GPL
-URL:		http://mitglied.lycos.de/PageOfMH
+URL:		https://mitglied.lycos.de/PageOfMH
 Group:		Sciences/Chemistry
 Source0:	%{name}-%{version}.tar.bz2
 Patch:		kmovisto-0.7.0-cpp.patch.bz2
