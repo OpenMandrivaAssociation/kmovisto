@@ -11,6 +11,11 @@ URL:		https://mitglied.lycos.de/PageOfMH
 Group:		Sciences/Chemistry
 Source0:	%{name}-%{version}.tar.bz2
 Patch:		kmovisto-0.7.0-cpp.patch.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	qt3-devel
 BuildRequires:  MesaGLU-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
